@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/jesseduffield/lazygit/master/schema/config.json
+gui:
+  nerdFontsVersion: "3"
+  language: "en"
+  switchTabsWithPanelJumpKeys: true
+  statusPanelView: allBranchesLog
+  # border: 'hidden'
+  showNumstatInFilesView: true
+  showRandomTip: false
+  showBottomLine: false
+  filterMode: fuzzy
+  showCommandLog: false
+  sidePanelWidth: 0.25
+  expandFocusedSidePanel: true
+  expandedSidePanelWeight: 4
+  branchColors:
+    'release': 'green'
+    'feature': 'cyan'
+    'develop': 'yellow'
+  theme:
+    activeBorderColor:
+      - blue
+      - bold
+    inactiveBorderColor:
+      - black
+      - bold
+    selectedLineBgColor:
+      - reverse
+  customIcons:
+    extensions:
+      ".http":
+        icon: '󱂛'
+        color: '#5050FF'
+git:
+  mainBranches: [main, master, develop]
+  paging:
+    useConfig: true
+    colorArg: always
+notARepository: 'quit'
+os:
+  open: 'nvim {{filename}}'
+  editPreset: 'nvim'
