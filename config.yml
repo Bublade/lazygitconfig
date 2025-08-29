@@ -34,7 +34,7 @@ gui:
 git:
   mainBranches: [main, master, develop]
   paging:
-    useConfig: true
+    useExternalDiffGitConfig: true
     colorArg: always
 notARepository: 'quit'
 os:
