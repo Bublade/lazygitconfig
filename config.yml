@@ -37,6 +37,7 @@ gui:
         icon: '󱂛'
         color: '#5050FF'
 git:
+  localBranchSortOrder: recency
   mainBranches: [main, master, develop]
   paging:
     useExternalDiffGitConfig: true
