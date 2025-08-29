@@ -17,6 +17,11 @@ gui:
     'release': 'green'
     'feature': 'cyan'
     'develop': 'yellow'
+  spinner:
+    rate: 83
+    frames: [
+      '', '', '', '', '', ''
+    ]
   theme:
     activeBorderColor:
       - blue
