@@ -13,10 +13,12 @@ gui:
   sidePanelWidth: 0.25
   expandFocusedSidePanel: true
   expandedSidePanelWeight: 4
-  branchColors:
-    'release': 'green'
-    'feature': 'cyan'
-    'develop': 'yellow'
+  branchColorPatterns:
+    '^bugfix': 'red'
+    '^feature': 'green'
+    '^develop': 'cyan'
+    '^release': 'magenta'
+    '^(master|main)': 'yellow'
   spinner:
     rate: 83
     frames: [
