@@ -1,10 +1,12 @@
 # yaml-language-server: $schema= https://raw.githubusercontent.com/jesseduffield/lazygit/master/schema/config.json
+
 gui:
   nerdFontsVersion: "3"
   language: "en"
   switchTabsWithPanelJumpKeys: true
   statusPanelView: allBranchesLog
   # border: 'hidden'
+
   showNumstatInFilesView: true
   showRandomTip: false
   showBottomLine: false
@@ -14,16 +16,15 @@ gui:
   expandFocusedSidePanel: true
   expandedSidePanelWeight: 4
   branchColorPatterns:
-    '^bugfix': 'red'
-    '^feature': 'green'
-    '^develop': 'cyan'
-    '^release': 'magenta'
+    '^[Bb]ugfix': 'red'
+    '^[Ff]eature': 'green'
+    '^[Pp]roject': 'blue'
+    '^develop': 'magenta'
+    '^[Rr]elease': 'cyan'
     '^(master|main)': 'yellow'
   spinner:
     rate: 83
-    frames: [
-      '', '', '', '', '', ''
-    ]
+    frames: ['', '', '', '', '', '']
   theme:
     activeBorderColor:
       - blue
@@ -36,15 +37,15 @@ gui:
   customIcons:
     extensions:
       ".http":
-        icon: '󱂛'
+        icon: "\U000F109B"
         color: '#5050FF'
 git:
   localBranchSortOrder: recency
   mainBranches: [main, master, develop]
-  paging:
-    useExternalDiffGitConfig: true
-    colorArg: always
-    pager: 'delta --dark --paging=never'
+  pagers:
+    - useExternalDiffGitConfig: true
+      colorArg: always
+      pager: 'delta --dark --paging=never'
 notARepository: 'quit'
 os:
   open: 'nvim {{filename}}'
