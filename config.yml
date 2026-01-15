@@ -43,7 +43,7 @@ git:
   localBranchSortOrder: recency
   mainBranches: [main, master, develop]
   pagers:
-    - externalDiffCommand: "./scripts/pager.ps1"
+    - externalDiffCommand: "$HOME/.config/lazygit/scripts/pager.ps1"
       useExternalDiffGitConfig: true
     - pager: 'delta --dark --paging=never'
       useExternalDiffGitConfig: true
