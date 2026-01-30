@@ -27,13 +27,35 @@ gui:
     frames: ['', '', '', '', '', '']
   theme:
     activeBorderColor:
-      - blue
-      - bold
+      - "#aeaed1"
+      - "bold"
     inactiveBorderColor:
-      - black
-      - bold
+      - "#606079"
+    optionsTextColor:
+      - "#606079"
     selectedLineBgColor:
-      - reverse
+      - "#252530"
+    cherryPickedCommitFgColor:
+      - "#d8647e"
+    cherryPickedCommitBgColor:
+      - "bg"
+    markedBaseCommitFgColor:
+      - "#f3be7c"
+    markedBaseCommitBgColor:
+      - "bg"
+    unstagedChangesColor:
+      - "#d8647e"
+    defaultFgColor:
+      - "#cdcdcd"
+  # theme:
+  #   activeBorderColor:
+  #     - blue
+  #     - bold
+  #   inactiveBorderColor:
+  #     - black
+  #     - bold
+  #   selectedLineBgColor:
+  #     - reverse
   customIcons:
     extensions:
       ".http":
